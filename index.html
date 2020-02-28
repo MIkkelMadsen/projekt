@@ -1,31 +1,323 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<title>Projekt Opgave</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
-	<link rel="stylesheet" href="style.css">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+	@font-face{font-family:'Quicksand';font-display: auto;font-style:normal;font-weight:300;src:local('Quicksand Light'),local(Quicksand-Light),url(https://fonts.gstatic.com/s/quicksand/v9/6xKodSZaM9iE8KbpRA_pgHYYT8L_.woff2) format("woff2")}@font-face{font-family:'Quicksand';font-display: auto;font-style:normal;font-weight:400;src:local('Quicksand Regular'),local(Quicksand-Regular),url(https://fonts.gstatic.com/s/quicksand/v9/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format("woff2")}@font-face{font-family:'Quicksand';font-style:normal;font-display: auto;font-weight:500;src:local('Quicksand Medium'),local(Quicksand-Medium),url(https://fonts.gstatic.com/s/quicksand/v9/6xKodSZaM9iE8KbpRA_p2HcYT8L_.woff2) format("woff2")}@font-face{font-family:'Quicksand';font-display: auto;font-style:normal;font-weight:700;src:local('Quicksand Bold'),local(Quicksand-Bold),url(https://fonts.gstatic.com/s/quicksand/v9/6xKodSZaM9iE8KbpRA_pkHEYT8L_.woff2) format("woff2")}@font-face{font-family:'Poppins';font-display: auto;font-style:normal;font-weight:300;src:local('Poppins Light'),local(Poppins-Light),url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format("woff2")}@font-face{font-family:'Poppins';font-style:normal;font-display: auto;font-weight:400;src:local('Poppins Regular'),local(Poppins-Regular),url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2")}@font-face{font-family:'Poppins';font-style:normal;font-display: auto;font-weight:500;src:local('Poppins Medium'),local(Poppins-Medium),url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format("woff2")}@font-face{font-family:'Poppins';font-style:normal;font-display: auto;font-weight:600;src:local('Poppins SemiBold'),local(Poppins-SemiBold),url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format("woff2")}@font-face{font-family:'Poppins';font-style:normal;font-display: auto;font-weight:700;src:local('Poppins Bold'),local(Poppins-Bold),url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format("woff2")}
+
+    	html {
+    		font-family: 'Quicksand', sans-serif;
+    	}
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+        
+        table td,
+        table th {
+            padding: 0
+        }
+
+		a, a:visited, a:active {
+		    /*margin-left: 5px;*/
+		    text-decoration: none;
+		    color: #007bff;
+		}
+
+		a:hover {
+		    color: #0056b3;
+		}
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+        
+        .c2 {
+            background-color: #ffffff;
+            padding-top: 0pt;
+            padding-bottom: 12pt;
+            line-height: 1.6304347826086956;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        .c5 {
+            color: #495961;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal
+        }
+        
+        .c0 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+        
+        .c4 {
+            background-color: #ffffff;
+            padding-top: 0pt;
+            padding-bottom: 9pt;
+            line-height: 1.2;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        .c3 {
+            color: #4f5165;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11.5pt;
+            font-family: 'Quicksand', sans-serif;
+            font-style: normal
+        }
+        
+        .c6 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 40pt 72pt 30pt 72pt
+        }
+        
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        li {
+            color: #000000;
+            font-size: 11pt;
+            /*font-family: "Arial";*/
+        }
+        
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+        
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+        
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+		#toc_container {
+		    background: #f9f9f9 none repeat scroll 0 0;
+		    border: 1px solid #aaa;
+		    display: table;
+		    font-size: 95%;
+		    margin-bottom: 3em;
+		    padding: 20px;
+		    width: auto;
+		}
+
+		.toc_title {
+		    font-weight: 700;
+		    text-align: center;
+		    font-family: 'Poppins', sans-serif;
+            color: #4f5165;
+		}
+
+		#toc_container li, #toc_container ul, #toc_container ul li{
+		    list-style: outside none none !important;
+		}
+
+		#toc_container li {
+			margin-bottom: 5px;
+		}
+
+		#totop {
+			position: absolute;
+			font-size: 24px;
+			font-family: "Arial";
+			margin-left: 6px;
+		}
+    </style>
+
+    <script type="text/javascript">
+    	function toTop() {
+    		window.location.hash = "";
+	  		document.body.scrollTop = 0;
+	  		document.documentElement.scrollTop = 0;
+  		}
+    </script>
+    <title>Projekt Opgave</title>
 </head>
-<body>
-	<div class="navbar navbar-expand-sm bg-dark justify-content-center">
-		<div class="nvabar-brand"><img src="" style="width: 40px;"></div>
-		<div class="navbar-nav">
-			<div class="nav-item">
-				<a href="#" class="nav-link">Hjem</a>
-			</div>
-			<div class="nav-item">
-				<a href="#" class="nav-link">Programmeringssprog</a>
-			</div>
-		</div>
+
+<body class="c6">
+
+	<div id="toc_container">
+		<p class="toc_title">Indhold</p>
+		<ul class="toc_list">
+			<li><a href="#php">1. &nbsp;PHP</a></li>
+			<li><a href="#cpp">2. &nbsp;C++</a></li>
+			<li><a href="#csharp">3. &nbsp;C#</a></li>
+			<li><a href="#java">4. &nbsp;Java</a></li>
+			<li><a href="#javascript">5. &nbsp;Javascript</a></li>
+			<li><a href="#lua">6. &nbsp;Lua</a></li>
+			<li><a href="#python">7. &nbsp;Python</a></li>
+		</ul>
 	</div>
+
+    <h4 class="c4" id="php">
+    	<span class="c5">PHP</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">PHP er et programmeringssprog brugt til alt, men det er mest brugt til hjemmesider. Lavet af Rasmus Lerdorf, udgivet I 1995. PHP er et meget stabilt sytem som er brugt på 78.8% af alle hjemmeside ifølge <a href="https://w3techs.com" target="_blank">W3Techs</a></span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="cpp">
+    	<span class="c5">C++</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">C++ er et programmeringssprog brugt til alt, men det er brugt meget i Game Hacking(Snyd i Spil). Lavet af Bjarne Stroustrup, udgivet I 1985. C++ er brugt af Google, YouTube, Facebook, Yahoo, Amazon, Twitter, Bing. C++ er også brugt i programmer som Firefox, Google Programmer, og Apple OS X</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="csharp">
+    	<span class="c5">C#</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">C# er et programmeringssprog primært brugt til at lave applikationer/programmer. Lavet af Anders Hejlsberg, udgivet I 2000. C# blevet brugt til Photoshop, Microsoft Office, Skype, Paint.NET, Internet Explorer, og selv noget af Facebook er lavet i C#</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="java">
+    	<span class="c5">Java</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">Java er et programmeringssprog brugt til alt. Lavet af James Gosling, udgivet I 1995. Java er brugt til at lave mange forskelige ting, det er mest kendt for spillet Minecraft. Men det er også brugt til mange forskelige hjemmesider som Google, YouTube, Facebook, Yahoo, Amazon, Twitter, eBay, og Linkedin</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="javascript">
+    	<span class="c5">Javascript</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">Javascript er et programmeringssprog til browsere, lavet af Brendan Eich i Mid til Slut 1995, med hjælp fra Ecma International, en IT organisation. Javascript er brugt til mange/fleste hjemmesider, inkl. denne.</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="lua">
+    	<span class="c5">Lua</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">Lua er et programmeringssprog primært brugt til at lave ekstra indhold til applikationer/programmer. Lavet af Roberto Ierusalimschy, udgivet I 1993. Et eksempel er spillet Garry's Mod (Forkortet til GMod), lavet af Garry Newman. Der er Lua brugt til at lave forskellige tilføjelser.</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
+    <h4 class="c4" id="python">
+    	<span class="c5">Python</span>&nbsp;<a id="totop" href="javascript:toTop();">^</a>
+    </h4>
+    <p class="c2">
+    	<span class="c3">Python er et programmeringssprog brugt til alt. Lavet af Guido Van Rossum, udgivet I 1991. Python er brugt af Wikipedia, Google, Yahoo!, NASA, Facebook, Amazon, Instagram, Spotify, og hele Reddit er lavet I Python.</span>
+    </p>
+    <p class="c0"><span class="c1"></span></p>
 </body>
 </html>
